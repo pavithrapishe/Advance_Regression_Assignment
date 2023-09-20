@@ -1,5 +1,5 @@
 # Project Name
-> Bike sharing Assignment
+> Advance Regression Assignment
 
 
 ## Table of Contents
@@ -9,19 +9,23 @@
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
-- This assignnment is to build a multiple regression model to the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market.
-- A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company wants to understand the factors affecting the demand for these shared bikes in the American market. The company wants to know:
-    -   Which variables are significant in predicting the demand for shared bikes.
-    -   How well those variables describe the bike demands
-- We are required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market. 
-- The dataset being used is called day.csv. 
+- Assignment Part-I
+A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price.
+- You are required to model the price of houses with the available independent variables. This model will then be used by the management to understand how exactly the prices vary with the variables.
+- The company wants to know:
+    - Which variables are significant in predicting the price of a house, and
+    - How well those variables describe the price of a house.
+- Assignment Part-II
+4 questions that are answered in the PDF
 
 ## Conclusions
-- Train R^2 :0.796
-- Train Adjusted R^2 :0.783
-- Test R^2 :0.777
-- Test Adjusted R^2 :0.77
-- Demand of bikes depend on year, temp, windspeed, sep, Light_snowrain, spring and winter.
+1. R2 score for both Ridge and Lasso (Test and Train) are almost same,
+    Ridge (Train) : 0.948691   (Test) : 0.901582
+    Lasso (Train) : 0.947310   (Test) : 0.893795
+2. Top 5 significant variables using Ridge are : GrLivArea, TotalBsmtSF, 1stFlrSF, OverallQual_8, 2ndFlrSF
+3. Top 5 significant variables using Lasso are : GrLivArea, TotalBsmtSF, OverallQual_8, OverallQual_9, Neighborhood_Crawfor
+4. Optimal Value of lamda for Ridge : 100
+5. Optimal Value of lamda for Lasso : 0.001
 
 ## Technologies Used
 - numpy
@@ -32,7 +36,7 @@
 - statsmodel
 
 ## Acknowledgements
-- This project was based on [Bike Sharing Assignment](https://learn.upgrad.com/course/4617/segment/27465/232011/708259/3574831).
+- This project was based on [Advance Regression Assignment](https://learn.upgrad.com/course/4617/segment/27466/242409/740997/3737982).
 
 
 ## Contact
